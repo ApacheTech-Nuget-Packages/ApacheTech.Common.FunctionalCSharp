@@ -6,6 +6,77 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<Version>1.0.0.0</Version>
+		<PackageReleaseNotes>
+			ApacheTech.Common.FunctionalCSharp v1.0.0
+
+			- Initial Nuget Package Release
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<ApplicationIcon>__Icon.ico</ApplicationIcon>
+		<AssemblyName>ApacheTech.Common.FunctionalCSharp</AssemblyName>
+		<AssemblyVersion>$(Version)</AssemblyVersion>
+		<AssemblyFileVersion>$(Version)</AssemblyFileVersion>
+		<Authors>ApacheTech Solutions</Authors>
+
+		<Company>ApacheTech Solutions</Company>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+		<Copyright>Copyright © ApacheTech Solutons, 2022. All Rights Reserved.</Copyright>
+
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>embedded</DebugType>
+		<Deterministic>true</Deterministic>
+		<Description>Functional programming extension methods and helpers for C#.</Description>
+
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+
+		<PackageIcon>__PreviewImage.png</PackageIcon>
+		<PackageLicenseFile>LICENCE.md</PackageLicenseFile>
+		<PackageProjectUrl>https://apachetech.co.uk</PackageProjectUrl>
+		<PackageTags>C#</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/ApacheTech-Nuget-Packages/ApacheTech.Common.FunctionalCSharp</RepositoryUrl>
+		<RootNamespace>ApacheTech.Common.FunctionalCSharp</RootNamespace>
+
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Title>Common .NET System Extension Methods</Title>
+
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="LICENCE.md">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="__PreviewImage.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
 	<ItemGroup>
 		<InternalsVisibleTo Include="ApacheTech.Common.FunctionalCSharp.Tests.Unit"/>
 	</ItemGroup>

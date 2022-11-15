@@ -22,13 +22,13 @@ namespace ApacheTech.Common.FunctionalCSharp.OneOf
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2}"/> class.
         /// </summary>
-        /// <typeparam name="T1">The type of the first parameter that this class encapsulates.</typeparam>
+        /// <param name="t1">The type of the first parameter that this class encapsulates.</param>
         public OneOf(T1 t1) : this(1) => _t1 = t1;
 
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2}"/> class.
         /// </summary>
-        /// <typeparam name="T2">The type of the second parameter that this class encapsulates.</typeparam>
+        /// <param name="t2">The type of the second parameter that this class encapsulates.</param>
         public OneOf(T2 t2) : this(2) => _t2 = t2;
 
         /// <summary>

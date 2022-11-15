@@ -41,11 +41,26 @@ namespace ApacheTech.Common.FunctionalCSharp.Memento
                 .Bind(x => x(input))
                 .Match(
                 success => CachedValues[input] = success!,
-                fail => throw fail.Exception)!;
+                fail => throw fail.Exception);
 
         }
 
+        /// <summary>
+        ///     Performs an implicit conversion from <see cref="Func{TInput, TOutput}"/> to <see cref="Memento{TInput, TOutput}"/>.
+        /// </summary>
+        /// <param name="f">The function to convert.</param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
         public static implicit operator Memento<TInput, TOutput>(Func<TInput, TOutput> f) => new(f);
+
+        /// <summary>
+        ///     Performs an implicit conversion from <see cref="Memento{TInput, TOutput}"/> to <see cref="Func{TInput, TOutput}"/>.
+        /// </summary>
+        /// <param name="f">The function to convert.</param>
+        /// <returns>
+        ///     The result of the conversion.
+        /// </returns>
         public static implicit operator Func<TInput, TOutput>(Memento<TInput, TOutput> f) => f.Invoke;
     }
 }

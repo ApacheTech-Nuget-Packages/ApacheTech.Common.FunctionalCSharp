@@ -28,31 +28,31 @@ namespace ApacheTech.Common.FunctionalCSharp.OneOf
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2, T3, T4, T5}"/> class.
         /// </summary>
-        /// <typeparam name="T1">The type of the first parameter that this class encapsulates.</typeparam>
+        /// <param name="t1">The type of the first parameter that this class encapsulates.</param>
         public OneOf(T1 t1) : this(1) => _t1 = t1;
 
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2, T3, T4, T5}"/> class.
         /// </summary>
-        /// <typeparam name="T2">The type of the second parameter that this class encapsulates.</typeparam>
+        /// <param name="t2">The type of the second parameter that this class encapsulates.</param>
         public OneOf(T2 t2) : this(2) => _t2 = t2;
 
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2, T3, T4, T5}"/> class.
         /// </summary>
-        /// <typeparam name="T3">The type of the third parameter that this class encapsulates.</typeparam>
+        /// <param name="t3">The type of the third parameter that this class encapsulates.</param>
         public OneOf(T3 t3) : this(3) => _t3 = t3;
 
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2, T3, T4, T5}"/> class.
         /// </summary>
-        /// <typeparam name="T4">The type of the fourth parameter that this class encapsulates.</typeparam>
+        /// <param name="t4">The type of the fourth parameter that this class encapsulates.</param>
         public OneOf(T4 t4) : this(4) => _t4 = t4;
 
         /// <summary>
         ///     Initialises a new instance of the <see cref="OneOf{T1, T2, T3, T4, T5}"/> class.
         /// </summary>
-        /// <typeparam name="T5">The type of the fifth parameter that this class encapsulates.</typeparam>
+        /// <param name="t5">The type of the fifth parameter that this class encapsulates.</param>
         public OneOf(T5 t5) : this(5) => _t5 = t5;
 
         /// <summary>

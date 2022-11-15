@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6D1A921C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApacheTech.Common.FunctionalCSharp", "src\ApacheTech.Common.FunctionalCSharp\ApacheTech.Common.FunctionalCSharp.csproj", "{65AE121E-20CE-46D5-97CD-E40AF5B1A96F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApacheTech.Common.FunctionalCSharp.Tests.Unit", "tests\ApacheTech.Common.FunctionalCSharp.Tests.Unit\ApacheTech.Common.FunctionalCSharp.Tests.Unit.csproj", "{2F8FE99D-3066-4C1A-AA66-4031ACB32A18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{65AE121E-20CE-46D5-97CD-E40AF5B1A96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65AE121E-20CE-46D5-97CD-E40AF5B1A96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65AE121E-20CE-46D5-97CD-E40AF5B1A96F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8FE99D-3066-4C1A-AA66-4031ACB32A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8FE99D-3066-4C1A-AA66-4031ACB32A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8FE99D-3066-4C1A-AA66-4031ACB32A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8FE99D-3066-4C1A-AA66-4031ACB32A18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{65AE121E-20CE-46D5-97CD-E40AF5B1A96F} = {6E2A82F0-C718-4312-9EE4-3D5C73A9FA31}
+		{2F8FE99D-3066-4C1A-AA66-4031ACB32A18} = {6D1A921C-F8B7-4EBD-A474-C5B79C658546}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F817818C-1354-42D2-9231-98A4454E69EE}
