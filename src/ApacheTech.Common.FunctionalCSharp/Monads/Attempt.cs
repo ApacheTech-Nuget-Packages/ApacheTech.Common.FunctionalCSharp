@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ApacheTech.Common.FunctionalCSharp.Monads
+﻿namespace ApacheTech.Common.FunctionalCSharp.Monads
 {
     /// <summary>
     ///     A monadic wrapper for a function type that may fail, during the execution of its function tree.
